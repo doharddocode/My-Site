@@ -1,0 +1,22 @@
+.push-notification
+  bottom: 10px
+  right: 10px
+
+  background-color: #ffffff
+  transition: all .2s ease-in-out
+  &:not(.show)
+    opacity: 0
+    display: block
+  &.show
+    opacity: 1
+  .push-status
+    width: 15px
+    height: 15px
+    margin: 0 8px 0 0
+
+    border-radius: 3px
+    background: #bebebf
+    &.success
+      background: #198754
+    &.failed
+      background: #dc3545
